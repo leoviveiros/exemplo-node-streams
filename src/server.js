@@ -13,7 +13,7 @@ function* run() {
     }
 }
 
-async function handler(request, response) {
+function handler(request, response) {
     const readable = new Readable({
         read() {
             for (const data of run()) {
